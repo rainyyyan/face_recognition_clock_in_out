@@ -1,0 +1,16 @@
+2021/08/02 14:52:42.794  [I]  service start!
+2021/08/02 14:52:42.794  [E]  service start![error]
+2021/08/02 14:53:31.847  [I]  service start!
+2021/08/02 14:53:31.847  [E]  service start![error]
+2021/08/02 14:55:16.143  [I]  service start!
+2021/08/02 14:55:16.143  [E]  service start![error]
+2021/08/02 14:58:00.522  [I] [main.go:20]  service start!
+2021/08/02 14:58:00.522  [E] [main.go:21]  service start![error]
+2021/08/02 14:59:09.178  [I] [asm_amd64.s:1371]  service start!
+2021/08/02 14:59:09.179  [E] [asm_amd64.s:1371]  service start![error]
+2021/08/02 14:59:33.083  [I] [proc.go:225]  service start!
+2021/08/02 14:59:33.083  [E] [proc.go:225]  service start![error]
+2021/08/02 14:59:48.186  [I] [log.go:546]  service start!
+2021/08/02 14:59:48.187  [E] [log.go:454]  service start![error]
+2021/08/02 15:00:03.523  [I] [main.go:20]  service start!
+2021/08/02 15:00:03.523  [E] [main.go:21]  service start![error]

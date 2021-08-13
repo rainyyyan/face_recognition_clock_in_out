@@ -1,0 +1,17 @@
+# Server config
+
+title = "server config"
+
+[system]
+port = 8888
+
+[db]
+username = "larva"
+password = "1234qwer"
+host = "192.168.8.177"
+port = 3306
+database = "cicada"
+
+[log]
+level = "Info" # Debug | Info
+file_path = "./log/pds.log"
