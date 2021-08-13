@@ -204,10 +204,10 @@ class FacesDatabase:
     def dump_faces(self, image, desc, name):
         match, label = self.add_item(desc, name)
         if match < 0:
+            filename = "{}-0.jpg".format(label)
             match = len(self.database)-1
-            filename = "{}-0.jpg".format(match)
         else:
-            filename = "{}-{}.jpg".format(match, len(self.database[match].descriptors)-1)
+            filename = "{}-{}.jpg".format(label, len(self.database[match].descriptors)-1)
         filename = osp.join(self.fg_path, filename)
 
         log.debug("Dumping image with label {} and path {} on disk.".format(label, filename))

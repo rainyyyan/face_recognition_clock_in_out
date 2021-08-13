@@ -35,7 +35,7 @@ sys.path.append(str(Path(__file__).resolve().parents[2] / 'common/python'))
 from utils import crop
 from landmarks_detector import LandmarksDetector
 from face_detector import FaceDetector
-from databasetest3 import FacesDatabase
+from faces_database import FacesDatabase
 from face_identifier import FaceIdentifier
 
 import monitors
@@ -213,7 +213,7 @@ def draw_detections(frame, frame_processor, detections, output_transform):
     size = frame.shape[:2]
     frame = output_transform.resize(frame)
     for roi, landmarks, identity in zip(*detections):
-        text = identity.id
+        text = str(identity.id)
         if identity.id != FaceIdentifier.UNKNOWN_ID:
             text += ' %.2f%%' % (100.0 * (1 - identity.distance))
 
@@ -263,6 +263,7 @@ def message_runner():
 def main():
     global CURRENT_ID
     global SEND
+    global KEEP_RUNNING
 
     args = build_argparser().parse_args()
 
