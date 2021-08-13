@@ -88,6 +88,7 @@ class FacesDatabase:
                     log.debug("Adding label {} to the gallery.".format(label))
                     self.add_item(descriptor, label)
 
+    # changed to save directly without asking
     def ask_to_save(self, name):
         # if self.no_show:
         #     return None

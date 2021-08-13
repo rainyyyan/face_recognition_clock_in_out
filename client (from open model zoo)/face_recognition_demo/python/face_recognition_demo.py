@@ -241,6 +241,7 @@ def center_crop(frame, crop_size):
                  (fw - crop_size[0]) // 2 : (fw + crop_size[0]) // 2,
                  :]
 
+# referenced from restricted zone notifier
 def message_runner():
     """
     Publish worker status to MQTT topic.
@@ -261,8 +262,11 @@ def message_runner():
             print("request sent")
 
 def main():
+
+    # added for keeping track of detections for message runner
     global CURRENT_ID
     global SEND
+    global KEEP_RUNNING
 
     args = build_argparser().parse_args()
 
@@ -314,6 +318,7 @@ def main():
         presenter.drawGraphs(frame)
         frame = draw_detections(frame, frame_processor, detections, output_transform)
 
+        # added for cli output
         for roi, landmarks, identity in zip(*detections):
             print('person id: ', identity.id, datetime.now())
             CURRENT_ID = identity.id
