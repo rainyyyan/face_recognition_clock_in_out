@@ -263,7 +263,6 @@ def message_runner():
 def main():
     global CURRENT_ID
     global SEND
-    global KEEP_RUNNING
 
     args = build_argparser().parse_args()
 
