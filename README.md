@@ -2,6 +2,8 @@
 
 Using OpenVINO and Raspberry Pi 4
 
+![diagram] (images/excalidraw.png)
+
 ### Libraries Used
 
 Python: 
