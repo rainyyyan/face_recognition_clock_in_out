@@ -2,7 +2,7 @@
 
 Using OpenVINO and Raspberry Pi 4
 
-![diagram] (./images/excalidraw.png)
+![diagram] (images/excalidraw.png)
 
 ### Libraries Used
 
